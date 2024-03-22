@@ -11,6 +11,8 @@ provider = "docker"
 host = "ghcr.io/forgeron-io/nextjs-demo"
 
 [app.deploy]
-provider = "kubernetes"
-port = 3000
-host = "demo.martin-paucot.fr"
+provider = "terraform"
+path = "./terraform"
+# provider = "kubernetes"
+# port = 3000
+# host = "demo.martin-paucot.fr"
